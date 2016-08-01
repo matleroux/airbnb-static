@@ -1,0 +1,9 @@
+<ul class="list-inline text-center padded">
+  <% ["mathieu", "fernando", "pedro"].each do |member| %>
+    <li>
+      <%= image_tag "#{member}.jpeg", class: "avatar-extralarge" %>
+      <h3><%= member.capitalize %></h3>
+      <a href= 'mailto:<%= "#{member}@lewagon.org" %>'><%= member %>@lewagon.org</a>
+    </li>
+  <% end %>
+</ul>
